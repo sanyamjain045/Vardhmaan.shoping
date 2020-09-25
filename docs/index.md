@@ -1,37 +1,523 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en" style="border-style:solid;scroll-behavior: smooth;border-spacing: inherit;border-width:5px">
 
-You can use the [editor on GitHub](https://github.com/sanyamjain045/shoping.github.io/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <title> VARDHMAN ONLINE CLOTHING SHOP</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        .san1 {
+            background-color: darkgoldenrod;
+            margin: 0.5px;
+            padding: 0.5px;
+            font-size: 18px;
+            font-weight: inherit;
+            border-radius: 3px 3px 3px 3px;
+            border: 1px;
+            font-family: sans-serif;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-color: black;
+            border-style: solid;
+            justify-content: center;
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+        }
 
-### Markdown
+        .san1:hover {
+            background-color: darkorange;
+        }
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        a {
+            font-size: 18px;
+            text-transform: uppercase;
+        }
 
-```markdown
-Syntax highlighted code block
+        .nav-area {
+            padding-left: 150px;
+            padding-right: 150px;
+        }
 
-# Header 1
-## Header 2
-### Header 3
+        .nav-area:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
 
-- Bulleted
-- List
+        .nav-area ul {
+            list-style: none;
+            margin: 0px;
+        }
 
-1. Numbered
-2. List
+        .nav-area>ul>li {
+            float: left;
+            position: relative;
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+        }
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+        .nav-area ul li a {
+            display: block;
+            padding: 15px 20px;
+        }
 
-### Jekyll Themes
+        .nav-area ul ul {
+            position: absolute;
+            padding: 0px;
+            width: 270px;
+            display: none;
+            top: 100%;
+            left: 0%;
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sanyamjain045/shoping.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+        }
 
-### Support or Contact
+        .nav-area ul li:hover>ul {
+            display: block;
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+        }
+
+        .nav-area ul ul li a {
+            background: pink;
+        }
+
+        .nav-area ul ul li:hover a {
+            background-color: darkgoldenrod;
+        }
+
+        .nav-area ul ul li {
+            position: relative;
+            top: 0%;
+        }
+
+        .nav-area ul ul ul {
+            top: 0%;
+            left: 100%;
+        }
+
+        .san2 {
+            background-color: antiquewhite;
+            width: 800px;
+            align-items: flex-start;
+            font-size: 20px;
+            padding-left: 15px;
+            padding-right: 00px;
+            margin-left: 5px;
+            margin-right: 5px;
+            border-radius: 12px 12px 12px 12px;
+            border: 0px;
+            height: 30px;
+        }
+
+        .san3 {
+            background-color: red;
+            font-size: 16px;
+            padding-left: 5px;
+            height: 25px;
+            width: 80px;
+            padding-right: 5px;
+            border-radius: 12px 12px 12px 12px;
+            border: 0px;
+        }
+
+        .san3:hover {
+            background-color: coral;
+        }
+
+        .image {
+            width: 500px;
+            height: 500px;
+            padding-left: 900px;
+            border-radius: 13px 13px 13px 13px;
+            border: 0px;
+            font-size: 20px;
+        }
+
+        .image2 {
+            width: 495px;
+            height: 495px;
+            border-radius: 13px 13px 13px 13px;
+            border: 0px;
+        }
+
+        .bg {
+            background: linear-gradient(to right, #f2a127, #e437b7);
+        }
+
+        .san1 ul {
+            position: absolute;
+            list-style: none;
+        }
+
+        .san4 {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin-left: 30px;
+            margin-right: 10px;
+            padding-left: 5px;
+            padding-right: 10px;
+        }
+
+        .name {
+            margin-left: 200px;
+            margin-right: 200px;
+            background-color: tomato;
+            width: 150px;
+            border-radius: 13px 13px 13px 13px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .checkbox {
+            border-radius: 13px 13px 13px 13px;
+            font-size: 26px;
+            font-style: oblique;
+            margin-left: 10px;
+            padding-bottom: 10px;
+        }
+
+        .submit {
+            width: 70px;
+            background-color: #3530c4;
+            border: 0px;
+            height: 35px;
+            border-radius: 13px 13px 13px 13px;
+            margin: 5px;
+            font-weight: 100;
+        }
+
+        .submit:hover {
+            background-color: goldenrod;
+        }
+
+    </style>
+    <meta name="keywords" content="vardhman t-shirts,vardhman jeans ,pants kurta-pajama" />
+    <meta name="description" content="best sale for you" />
+    <meta http-equiv="refresh" content="90" />
+    <meta name="author" content="Talk for fun" />
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+    <script type="text/javascript" charset="utf-8" onclick="yes" role="banner">
+        window.alert("ARE YOU READY TO VISIT ON THIS SITE");
+
+    </script>
+</head>
+
+<body class="bg">
+    <h5 style="background-color:chocolate">
+        <form><a herf="www.google.com/chrome">
+                <input class="san3" type="submit" value="Login" required="click" onclick="">
+                &nbsp;
+                <input class="san3" type="submit" value="Logout" onclick=""></a>
+        </form>
+        <center>
+            <h1>$$ WELCOME TO VARDHMAN ONLINE SHOP !! </h1>
+        </center>
+        <br><br>
+    </h5>
+    <hr><br>
+    <center>
+        <nav class="nav-area">
+            <ul>
+                <li> <a class="san1" herf="#">SHIRTS </a>
+                    <ul>
+                        <li> <a class="san1" herf="#"> Slim</a></li>
+                        <li> <a class="san1" herf="#"> Regular</a></li>
+                        <li><a class="san1" herf="#"> Comfortable</a></li>
+                        <li><a class="san1" herf="#"> Casual</a></li>
+                        <li><a class="san1" herf="#"> Formal </a></li>
+                        <li><a class="san1" herf="#"> Half shirt</a></li>
+                        <li><a class="san1" herf="#"> t-shirt </a></li>
+                    </ul>
+                </li>
+                <li> <a class="san1" herf="#"> PANTS</a>
+                    <ul>
+                        <li> <a class="san1" herf="#"> Casual Trowser</a></li>
+                        <li> <a class="san1" herf="#"> Formal Track Pants</a></li>
+                        <li><a class="san1" herf="#"> slim pants</a></li>
+                        <li><a class="san1" herf="#">Casual pants</a></li>
+                        <li><a class="san1" herf="#">Formal Trowser</a></li>
+                    </ul>
+                </li>
+                <li><a class="san1" herf="#"> coats</a>
+                    <ul>
+                        <li> <a class="san1" herf="#"> blazer </a></li>
+                        <li> <a class="san1" herf="#">long coat</a></li>
+                        <li><a class="san1" herf="#"> waist coat</a></li>
+                        <li><a class="san1" herf="#"> men's check suit</a></li>
+                        <li><a class="san1" herf="#"> women's long coat</a></li>
+                        <li><a class="san1" herf="#"> women's office suit  </a></li>
+                        <li><a class="san1" herf="#"> rain suit </a></li>
+                    </ul>
+                </li>
+                <li><a class="san1" herf="#"> under GARMENTS</a>
+                    <ul>
+                        <li><a class="san1" herf="#">loafer socks </a></li>
+                        <li><a class="san1" herf="#"> men's cotton vest</a></li>
+                        <li><a class="san1" herf="#">men's cotton brief</a></li>
+                        <li><a class="san1" herf="#"> women's air bra </a></li>
+                        <li><a class="san1" herf="#"> women's bikni</a></li>
+                        <li><a class="san1" herf="#"> women's vest </a></li>
+                        <li><a class="san1" herf="#"> men's shorts</a></li>
+                    </ul>
+                </li>
+                <li><a class="san1" herf="#"> SPORTS WEAR </a>
+                    <ul>
+                        <li> <a class="san1" herf="#">lower </a></li>
+                        <li> <a class="san1" herf="#">Casual Track jackets</a>
+                            <ul>
+                                <li> <a class="san1" herf="#">men's gym t-shirt </a></li>
+                                <li> <a class="san1" herf="#">theigh pads </a></li>
+                                <li><a class="san1" herf="#"> women's track suit </a></li>
+                                <li><a class="san1" herf="#">men's track suit</a></li>
+                                <li><a class="san1" herf="#">casual track vest </a></li>
+                            </ul>
+                        </li>
+                        <li><a class="san1" herf="#"> men's jogger</a></li>
+                        <li><a class="san1" herf="#"> tank top</a></li>
+                        <li><a class="san1" herf="#"> women's yoga set </a></li>
+                    </ul>
+                </li>
+                <li><a class="san1" herf="#"> jeans </a>
+                    <ul>
+                        <li> <a class="san1" herf="#">distressed jeans </a></li>
+                        <li> <a class="san1" herf="#">slim jeans</a></li>
+                        <li><a class="san1" herf="#"> loose jeans</a></li>
+                        <li> <a class="san1" herf="#">regular jeans</a></li>
+                        <li><a class="san1" herf="#"> skinny jeans</a></li>
+                        <li><a class="san1" herf="#"> cargo </a></li>
+                        <li><a class="san1" herf="#"> bermuda </a></li>
+                    </ul>
+                </li>
+                <li><a class="san1" herf="#">Cultural fashion </a>
+                    <ul>
+                        <li> <a class="san1" herf="#">kurta dhoti </a></li>
+                        <li> <a class="san1" herf="#">kurta pyjama</a>
+                            <ul>
+                                <li> <a class="san1" herf="#"> gujrati angarakha</a></li>
+                                <li> <a class="san1" herf="#"> dastar(pagri)</a></li>
+                                <li><a class="san1" herf="#"> gagra choli</a></li>
+                                <li><a class="san1" herf="#">lungi shirt</a></li>
+                                <li><a class="san1" herf="#">salwar kameez</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="san1" herf="#">achkan shervani</a></li>
+                        <li><a class="san1" herf="#"> lahenga</a></li>
+                        <li><a class="san1" herf="#"> saree </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </center>
+    <h1></h1>
+    <center>
+        <form>
+            <input type="search" class="san2" placeholder="  Search here..." required="text">
+            <a href="all%20tshirts.jpg">
+                <input type="submit" value="Search" class="san3" onclick=""></a>
+        </form>
+    </center>
+    <hr>
+    <form>
+        <div>
+            <span class="name">Half-Shirt </span>
+            <span class="name"> T-Shirt </span>
+            <span class="name">Full Shirt </span></div>
+        <span> <img src="halfshirts.jpg" alt="Men's t-shirts" class="image2">
+            <img src="tshirtsmen.webp" alt="men's pants" class="image2" />
+            <img src="boyshiet.webp" alt="sports wears" class="image2">
+        </span>
+        <div><span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=499 RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=399 RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=799 RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <br>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=949 RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=749 RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=1499 RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+        </div>
+    </form><br>
+    <form>
+        <div>
+            <span class="name"> Blazer </span>
+            <span class="name">Vaist Coat </span>
+            <span class="name">Check Suit </span></div>
+        <span> <img src="blazer.webp" alt="coats/blazer" class="image2">
+            <img src="coat.webp" alt="jeans" class="image2" />
+            <img src="Check-Suits-For-Men-3-Piece-Wedding-Suit-2017-Autumn-Winter-Vintage-Plaid-Suits-For-Men__93116.1527763968.jpg" alt="lahenga" class="image2">
+        </span>
+        <div><span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=2.5K RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=1.7K RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=5.1K RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=4.8K RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=3.2K RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=9.5K RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+        </div>
+    </form><br>
+    <form>
+        <div>
+            <span class="name">Lahenga </span>
+            <span class="name">Long Coat </span>
+            <span class="name">Girls Vest </span></div>
+        <span> <img src="lehenga.jpg" alt="Men's t-shirts" class="image2">
+            <img src="womencoats.jpg" alt="men's pants" class="image2" />
+            <img src="girlsbaniyan.jpg" alt="sports wears" class="image2">
+        </span>
+        <div><span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=20K RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=3.2K RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=399 RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <br>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=36K RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=5.5K RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=699 RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+        </div>
+    </form><br>
+    <form>
+        <div>
+            <span class="name">Gym Pant </span>
+            <span class="name">Shorts </span>
+            <span class="name">Girls Jeans </span></div>
+        <span> <img src="pantsgirls.jpg" alt="Men's t-shirts" class="image2">
+            <img src="shortsgirls.jpg" alt="men's pants" class="image2" />
+            <img src="girlsjeans.jpg" alt="sports wears" class="image2">
+        </span>
+        <div><span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=999 RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=599.9 RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=999 RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <br>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=1.9K RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=1.1K RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=1.8K RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+        </div>
+    </form>
+    <br>
+    <form>
+        <div>
+            <span class="name">Underwear </span>
+            <span class="name"> Shorts </span>
+            <span class="name">Men's vest </span></div>
+        <span> <img src="undergarmentsboys.jpg" alt="Men's t-shirts" class="image2">
+            <img src="shorts.webp" alt="men's pants" class="image2" />
+            <img src="mensbaniyan.jpg" alt="sports wears" class="image2">
+        </span>
+        <div><span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=250 RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=349 RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=99 RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <br>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=399 RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=549 RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=189 RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+        </div>
+    </form>
+    <br>
+    <form>
+        <div>
+            <span class="name">Jeans </span>
+            <span class="name">Men's Pants </span>
+            <span class="name">Track pants</span></div>
+        <span> <img src="mensjeans.jpg" alt="Men's t-shirts" class="image2">
+            <img src="men-formal-pants-500x500.jpg" alt="men's pants" class="image2" />
+            <img src="trackpant.jpg" alt="sports wears" class="image2">
+        </span>
+        <div><span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=1.7K RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=1.2K RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=799 RUPEES-/{one}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <br>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=3.1K RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=2.1K RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit" checked></span>
+            <span class="checkbox">
+                <input type="checkbox" class="san4"> &nbsp;&nbsp;&nbsp; MRP.=1.5 RUPEES-/{two}
+                <input type="submit" value="Confirm" onclick="checkbox" class="submit"></span>
+        </div>
+    </form>
+    <hgroup style="background:linear-gradient(to right,#4a9406,#9eda68);border-radius: 13px 13px 13px 13px;">
+        <center>
+            <div>
+                <h1 style="background-color: darkred;border-radius: 13px 13px 13px 13px;">
+                    <hr>About this page.._
+                    <hr>
+                </h1>
+            </div>
+        </center>
+        <div>
+            <h2 style="margin-left: 100px">Vardhmanonlineshop.com<br><br> Your lists<br><br>Find a gift<br><br>Browsing history<br><br></h2>
+        </div><br><br><br><br><br>
+    </hgroup>
+    <div>
+        <h2 style="margin-left: 1100px;margin-top: -330px">Your Orders<br><br>Your Account<br><br>Your Recommendations<br><br> Customer Service</h2>
+    </div><br><br>
+    <center>
+        <h2>Help ! <br><br> <br><br></h2>
+        <h3> &copy; copyright 2019! </h3>
+    </center>
+
+</body>
+
+</html>
